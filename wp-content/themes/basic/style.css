@@ -1,0 +1,341 @@
+/*
+Theme Name: Basic
+Theme URI: http://wordpress.org/themes/basic
+Author: Yoobe Auckland Web Design & Production 02-19
+Author URI: http://wordpress.org/
+Description: The start-up business
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: basic
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+#hero-area-page {
+  /* min-height: 650px; */
+  position: relative;
+  overflow: hidden;
+  padding: 36px 0 80px;
+  text-align: center;
+
+}
+
+#hero-area-page .head-title {
+  /* color: #F63854; */
+  color: #007db9;
+}
+
+.header-button {
+  margin-top: 1em;
+}
+
+.testimonial-item .content .star-icon span {
+  /* color: #F63854; */
+  color: #007db9;
+}
+
+.section-title {
+  /* color: #F63854; */
+  color: #007db9;
+}
+
+#footer .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.about-area .row:nth-child(odd) {
+  background-color: rgb(236, 236, 236);
+}
+
+/* flex box order */
+.about-area .row:nth-child(even)>:nth-child(1) {
+  /* border:1px red solid; */
+  order: 2;
+}
+
+#features .box-item .icon .img-thumb img {
+  width: 5em;
+  /* border: 1px solid red; */
+}
+
+
+.tabContainer {
+  /*width: 100%;
+    height: auto;*/
+}
+
+.tabContainer ul li {
+  /*display: flex;
+      flex-wrap: wrap;
+      align-items: center;*/
+  color: #AD9966;
+  background-color: white;
+  box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+
+.tabContainer ul li.active {
+  /*display: flex;
+        flex-wrap: wrap;
+        align-items: center;*/
+  color: white;
+  background-color: #AD9966;
+  /*box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);*/
+}
+
+.tabContainer ul li i {
+  font-size: 1.5em;
+}
+
+.tabContainer ul li p {
+  font-size: 0.8em;
+}
+
+.tabContainer .content {
+  margin-top: 4em;
+}
+
+.tabContainer .content .tab_content {
+  background-color: white;
+  box-shadow: 0px 1px 18px -12px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  min-height: 9em;
+  min-width: 47%;
+}
+
+.tabContainer .content .tab_content .img_left {
+  flex: 0 0 20%;
+  /*margin-left: 0.5em;
+          margin-right: 0.8em;*/
+}
+
+.tabContainer .content .tab_content .img_left img {
+  display: block;
+  width: 100%;
+}
+
+.tabContainer .content .tab_content .content_center {
+  flex: 0 0 52%;
+  /*margin: 1em 0;*/
+}
+
+.tabContainer .content .tab_content .content_center .gold_bold {
+  /* color: #F63854; */
+  color: #007db9;
+  font-weight: bold;
+}
+
+.tabContainer .content .tab_content .content_center .gold {
+  /* color: #F63854; */
+  color: #007db9;
+}
+
+.tabContainer .content .tab_content .content_center .gray {
+  color: #8B8B92;
+}
+
+.tabContainer .content .tab_content .content_right {
+  flex: 0 0 12%;
+  font-weight: bold;
+  font-size: 1em;
+  color: #AD9966;
+  /*margin-left: 0.6em;*/
+}
+
+
+.section4 {
+  background-image: url("assets/img/image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 36%;
+  min-height: 10em;
+  padding: 33em 0 4em;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+
+.index .section4 .container {
+  margin: 0 2em;
+}
+
+.index .section4 .container .img {
+  text-align: center;
+}
+
+.index .section4 .container .img .wine_offer {
+  margin: 0;
+  padding: 0;
+}
+
+.description_offers .day1,
+.index .description_offers .day2,
+.index .description_offers .day3 {
+  margin-bottom: 0.5em;
+}
+
+.description_offers .info {
+  background-color: #ad9966;
+  box-shadow: 0px 45px 70px rgba(0, 0, 0, 0.24);
+  padding: 1em 2.5em;
+  text-align: center;
+}
+
+.description_offers .info h1 {
+  color: white;
+  padding: 0.5em 0;
+}
+
+.index .description_offers .info .black_p {
+  color: black;
+}
+
+.section4 .container .description_offers {
+  margin-top: 3em;
+}
+
+.img {
+  /*flex: 1 0 40%;*/
+  /*margin: 1em 2em 1em 3em;*/
+  /*for h1*/
+}
+
+.img h1 {
+  /*color: #ad9966; */
+}
+
+.img .line {
+  margin-bottom: 2em;
+}
+
+.img .line h1 {
+  position: relative;
+  display: inline-block;
+  /*top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);*/
+}
+
+.line h1::after {
+  content: " ";
+  width: 100%;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 0.08em;
+}
+
+.line h1::before {
+  content: " ";
+  width: 100%;
+  background-color: #ffffff;
+  bottom: -0.4em;
+  left: 0;
+  position: absolute;
+  height: 0.2em;
+}
+
+.bold_p {
+  color: white;
+  font-weight: bold;
+  /*font-size: 1em;*/
+  margin-bottom: 1.5em;
+}
+
+.flex_left {
+  flex: 0 0 40%;
+}
+
+.flex_right {
+  flex: 1 0 40%;
+}
+
+.button_p {
+  margin: 3em 0em;
+}
+
+.section2 {
+  background-image: url("assets/img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40%;
+  min-height: 10em;
+  background-attachment: fixed;
+  position: relative;
+  background-position: top;
+}
+
+.contactsection2 {
+  background-image: url("assets/img/contactsection2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40%;
+  min-height: 10em;
+  background-attachment: fixed;
+  position: relative;
+  background-position: top;
+}
+.section2text {
+  /* background-color: #F63854; */
+  background-color: #007db9;
+  padding: 2em 0;
+  opacity: 0.9;
+  text-align: center;
+}
+.btn-common2 :hover
+{
+  color:white;
+}
+
+.section2text h1 {
+  color: white !important;
+}
+
+.section2text p {
+  color: white;
+}
+
+@media only screen and (min-width: 60em) {
+  .section2 {
+    min-height: 1em;
+  }
+
+  .section2 .container {
+    padding: 0 3em;
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 80em) {
+  .tabContainer .content .tab_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section2 {
+    padding-top: 29%;
+  }
+
+  .container {
+    max-width: 77em;
+    margin: auto;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
